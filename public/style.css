@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+    background: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+canvas {
+    display: block;
+    background: white;
+    cursor: crosshair;
+}
+
+/* Toolbar di bawah */
+#toolbar {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #313131;
+    padding: 10px 15px;
+    border-radius: 12px 12px 0 0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0px -4px 12px rgba(0,0,0,0.2);
+    z-index: 100;
+}
+
+/* Styling input dan button */
+#toolbar label, #toolbar button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+#toolbar input[type="color"] {
+    background: none;
+    border: none;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    cursor: pointer;
+}
+
+#toolbar input[type="range"] {
+    cursor: pointer;
+}
+
+#toolbar button {
+    background: none;
+    border: none;
+    padding: 5px;
+    transition: background 0.2s;
+}
+
+#toolbar button:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+}
